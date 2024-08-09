@@ -18,22 +18,26 @@ export default function RocketBackToTop({ scrollPos }) {
     };
     return (
         <>
-            <div className={`fixed bottom-0 left-0 px-5  transition-all duration-[1s] z-[5] delay-0 `}
+            <div className={`fixed bottom-0 left-0 px-5  transition-all duration-[1s] z-[5] delay-0 hover:scale-110  `}
                 style={{
                     transform: flyrocket ? 'translateY(-5000px)' : 'translate(0px, 27px)',
-                    opacity:flyrocket?'0':'100',
+                    opacity:flyrocket?'50':'100',
                     transitionDuration:'2s'
                     
                     
                 }}
+                title="Go to Top"
+
             >
+                {/* <h1 className="rainbow-text ">LioneArt</h1> */}
                 {
                     scrollPos >900 ? (
-                        <img src="roket.svg" className="w-20 h-20 object-fill text-green-500 cursor-pointer bg-transparent"
+                        <img src="roket.svg" className="w-20 h-20 object-fill cursor-pointer bg-transparent "
                             onClick={handlerocketClick}
                             // style={{transform:'rotate(0deg)',scale:flyrocket?'1.5':'1',}}
-                            title="Go to Top"
+                            
                         />
+                      
                     )
                         : null
 
