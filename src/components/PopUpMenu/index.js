@@ -33,9 +33,8 @@ export default function PopUpMenu() {
                 <div className="h-auto w-auto relative " ref={PopUpMenuRef}>
 
                     <div className="flex justify-center items-center absolute h-12 w-12 bg-white bottom-0 rounded-full right-0 m-2 group" onClick={togglePopUpMenu}>
-                        {
-                            displayPopUpMenu ? <X className="transition-all font-extrabold  duration-300 delay-500" /> : <Plus className="transition-opacity font-extrabold  duration-300" />
-                        }
+                         <X className={`transition-all font-extrabold  duration-300 delay-100 ${displayPopUpMenu ? ' rotate-0 ' : 'rotate-45'}`} /> 
+                        
                     </div>
                     <div className={`flex justify-center items-center absolute h-10 w-10 text-[#9C54F3] bg-slate-100   transition-all duration-500 delay-75  ${displayPopUpMenu ? ' bottom-16 right-0 opacity-100 ' : ' bottom-0 right-0 z-[-1] opacity-0'}  rounded-full m-3`} >
                         <AlarmCheck />
