@@ -49,3 +49,11 @@ body{
 .animation1{
     animation: flyAcross 5s linear infinite;
 }
+.rainbow-text {
+    /* background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); */
+    background-image: url('https://t4.ftcdn.net/jpg/07/28/83/25/240_F_728832521_KFCtxyCzCTt3NOZ7C4aHpjRiAH0nwP24.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
