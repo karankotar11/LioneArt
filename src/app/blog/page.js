@@ -1,3 +1,5 @@
+'use client'
+import TextEditor from "@/components/text-editor";
 import { Grid } from "lucide-react";
 
 export default function BlogPage(){
@@ -18,8 +20,9 @@ export default function BlogPage(){
                 </div>
 
             </div>
-            <h1>How are you this is blog page</h1>
+            {/* <h1>How are you this is blog page</h1> */}
         </div>
+        {/* <TextEditor/> */}
         </>
     )
 }
