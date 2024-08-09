@@ -1,10 +1,20 @@
 'use client'
-import { Rocket } from "lucide-react";
-import { useState } from "react";
+// import { Rocket } from "lucide-react";
+import { useRef, useState } from "react";
 
 export default function RocketBackToTop({ scrollPos }) {
     const [flyrocket, setFlyRocket] = useState(false);
+    const audioRocket = useRef(null)
+    function handleClick(){
+        // Play the sound
+        if (audioRocket.current) {
+            audioRocket.current.play();
+        }
+        // You can add additional functionality for the button here
+        console.log('Button clicked!');
+      };
     function handlerocketClick() {
+        handleClick()
         setFlyRocket(true)
         setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -18,6 +28,7 @@ export default function RocketBackToTop({ scrollPos }) {
     };
     return (
         <>
+        
             <div className={`fixed bottom-0 left-0 px-5  transition-all duration-[1s] z-[5] delay-0 hover:scale-110  `}
                 style={{
                     transform: flyrocket ? 'translateY(-5000px)' : 'translate(0px, 27px)',
@@ -37,11 +48,13 @@ export default function RocketBackToTop({ scrollPos }) {
                             // style={{transform:'rotate(0deg)',scale:flyrocket?'1.5':'1',}}
                             
                         />
+                        
                       
                     )
                         : null
 
                 }
+                <audio ref={audioRocket} src="/sounds/rocketfly.wav" preload="auto" />
             </div>
         </>
 
