@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function PopUpMenu() {
     const [displayPopUpMenu, setdisplayPopUpMenu] = useState(false);
+    const PopUpMenuRef = useRef(null)
     const togglePopUpMenu = () => {
         setdisplayPopUpMenu(prevState => !prevState);
     };
@@ -13,7 +14,7 @@ export default function PopUpMenu() {
             setdisplayPopUpMenu(false);
         }
     };
-    const PopUpMenuRef = useRef(null)
+    
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
 
