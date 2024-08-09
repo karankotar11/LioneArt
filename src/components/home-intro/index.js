@@ -114,7 +114,7 @@ export default function ImagesScroll({ ref1, handleExploreMoreClick }) {
                 </div>
 
             </div>
-            <div className={`fixed -right-44 bottom-0 transition ease-out delay-150 duration-[8s] md:duration-[2s] ${flyIron ? 'translate-y-[-1100px]  translate-x-[-1200px] scale-75' : ' '} `}>
+            <div className={`fixed -right-44 bottom-0 transition ease-out delay-150 duration-[8s] md:duration-[2s] ${flyIron ? 'translate-y-[-100vh]  translate-x-[-1200px] scale-75' : ' '} `}>
                 <div className="">
                     <img src="ironman.png" className="h-32 " />
                 </div>
