@@ -1,4 +1,5 @@
 'use client'
+import { playClickSound } from '@/utils/play-click-sound';
 // components/Header.js
 import { AlignJustify, X } from 'lucide-react';
 import Link from 'next/link';
@@ -11,6 +12,7 @@ const Header = () => {
   const menuRef =useRef(null)
   const toggleMenu = () => {
     setShowMenu(prevState => !prevState);
+    playClickSound()
   };
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
