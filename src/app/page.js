@@ -3,6 +3,7 @@
 import ImagesScroll from "@/components/home-intro";
 import LeftSlide from "@/components/left-slide";
 import PopUpMenu from "@/components/PopUpMenu";
+import { playClickSound } from "@/utils/play-click-sound";
 import { useRef } from "react";
 
 
@@ -11,11 +12,14 @@ export default function Home() {
   const scrollleftSectoion = useRef(null);
   
   const handleExploreClick = () => {
+    
       if (exploreSectionRef.current) {
         exploreSectionRef.current.scrollIntoView({ behavior: 'smooth' });
       }
+      playClickSound()
     };
   const handleExploreMoreClick = () => {
+    playClickSound()
       if (exploreSectionRef.current) {
         scrollleftSectoion.current.scrollIntoView({ behavior: 'smooth' });
       }
