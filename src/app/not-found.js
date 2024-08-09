@@ -3,6 +3,7 @@ import Link from "next/link"
 function PageNotFound(){
     return(
         <>
+        
         <div className="flex min-h-screen justify-center items-center">
                 <div className="flex gap-2 flex-col" >
                 <h1 className="text-2xl text-white">404 | Page not Found !</h1>
