@@ -39,7 +39,7 @@ export default function AboutDetails({scrollPos}) {
 
     const handleWhatWeOfferClick = () => {
         if (whatOfferRef.current) {
-            
+            whatOfferRef.current.scrollIntoView({ behavior: 'smooth' });
         }
       };
 
