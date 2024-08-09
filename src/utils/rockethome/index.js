@@ -8,7 +8,7 @@ export default function RocketBackToTop({ scrollPos }) {
         setFlyRocket(true)
         setTimeout(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 100);
+        }, 300);
         setTimeout(() => {
             setFlyRocket(false)
         }, 2000);
@@ -32,6 +32,7 @@ export default function RocketBackToTop({ scrollPos }) {
                         <img src="roket.svg" className="w-20 h-20 object-fill text-green-500 cursor-pointer bg-transparent"
                             onClick={handlerocketClick}
                             // style={{transform:'rotate(0deg)',scale:flyrocket?'1.5':'1',}}
+                            title="Go to Top"
                         />
                     )
                         : null
