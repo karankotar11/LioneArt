@@ -54,7 +54,7 @@ export default function RocketBackToTop({ scrollPos }) {
                         : null
 
                 }
-                <audio ref={audioRocket} src="/sounds/rocketfly.wav" preload="auto" />
+                <audio ref={audioRocket} src="./sounds/rocketfly.wav" preload="auto" />
             </div>
         </>
 
