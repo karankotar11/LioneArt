@@ -75,7 +75,7 @@ const Header = () => {
             <li className='hover:font-bold hover:text-gray-700'><Link href="/about" onClick={toggleMenu}>About</Link></li>
             <li className='hover:font-bold hover:text-gray-700'><Link href="/services" onClick={toggleMenu}>Services</Link></li>
             <li className='hover:font-bold hover:text-gray-700'><Link href="/contact" onClick={toggleMenu}>Contact</Link></li>
-            <li className='hover:font-bold hover:text-gray-700'><Link href="/Blog" onClick={toggleMenu}>Blog</Link></li>
+            <li className='hover:font-bold hover:text-gray-700'><Link href="/blog" onClick={toggleMenu}>Blog</Link></li>
           </ul>
        
 
