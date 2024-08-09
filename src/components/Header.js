@@ -43,7 +43,7 @@ const Header = () => {
           <li className='hover:font-bold hover:text-gray-700'><Link href="/about">About</Link></li>
           <li className='hover:font-bold hover:text-gray-700'><Link href="/services">Services</Link></li>
           <li className='hover:font-bold hover:text-gray-700'><Link href="/contact">Contact</Link></li>
-          <li className='hover:font-bold hover:text-gray-700'><Link href="/Blog">Blog</Link></li>
+          <li className='hover:font-bold hover:text-gray-700'><Link href="/blog">Blog</Link></li>
         </ul>
         <div>
           <button className=' text-white border-black px-3 py-2  hover:border-black border-2 hover:text-black rounded-2xl mx-5  bg-gradient-to-r from-[#F308FE] to-[#56e2f5] hover:bg-gradient-to-r hover:from-[#69eeff] hover:to-[#f424ff]'>Sign In</button>
